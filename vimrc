@@ -282,3 +282,7 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
+" Include user's vim config from a fork
+if filereadable(expand("~/.vim/vimrc.local"))
+  source ~/.vim/vimrc.local
+endif

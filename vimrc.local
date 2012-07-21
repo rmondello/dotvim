@@ -1,0 +1,14 @@
+" Ricky's extensions to Cody's vimrc
+
+" Making without 'Press enter to continue.'
+:ab maker make<CR><CR>
+
+" Quick compiling
+nmap ;; :wa\|maker<cr>
+
+imap jj <Esc>
+
+" Map double-tap Esc to clear search highlights
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+
+colorscheme sunburst
