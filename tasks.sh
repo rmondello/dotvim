@@ -44,7 +44,7 @@ link_vimrc () {
 
 pull () {
     echo "Pulling latest from $(git config remote.origin.url)..."
-    git pull
+    git pull origin rmondello
 
     submodules
 }
