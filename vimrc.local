@@ -1,0 +1,22 @@
+" Ricky's extensions to Cody's vimrc
+" pathogen magic
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+map - :NERDTreeToggle<CR>
+" NERDTree configuration
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+map <Leader>n :NERDTreeToggle<CR>
+
+" Making without 'Press enter to continue.'
+:ab maker make<CR><CR>
+
+" Quick compiling
+nmap ;; :wa\|maker<cr>
+
+imap jj <Esc>
+
+" Map double-tap Esc to clear search highlights
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+
+colorscheme sunburst
