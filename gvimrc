@@ -70,6 +70,9 @@ set guioptions-=T
 " If we go fullscreen, use all the room.
 " set fuopt=maxvert,maxhorz
 
+" Best font of all time.
+set guifont=Monaco:h13
+
 " Stupid blinking cursor.
 set gcr=n:blinkon0
 
